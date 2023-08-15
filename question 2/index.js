@@ -9,7 +9,7 @@ app.get('/numbers', async (req, res) => {
 
   if (!urls) {
     return res.status(400).json({ error: 'No URLs provided.' });
-  }
+  } 
 
   const validUrls = Array.isArray(urls) ? urls : [urls];
 
